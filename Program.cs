@@ -5,9 +5,13 @@ using System.Collections.Generic;
 public class Program
 {
 
-    public static string nameText = "default-John";
+    
+    public static string userName = "user is John";
+    public static string nameText = "file default-John";
 	public static void Main()
 	{
+
+       // nameText = File.WriteAllText//bbbbbbbbbbrrrrrrrruuuuuuuuuuuuuhhhhhhhhhhhhhh
     
         //File.ReadAllText(SonofAnder.txt, out nameText);      //maybe
   
@@ -16,11 +20,21 @@ public class Program
         nameText = File.ReadAllText(filePath);
         //also i learned that using the @ sign takes out the chance of perceived escape keys
 
-        nameText = File.ReadAllText("SonofAnder.txt");
+       // nameText = File.ReadAllText("SonofAnder.txt");
 		
-		Console.WriteLine(nameText);
+        if (filePath.IsWhiteSpace()){
+            
+            Console.WriteLine("What is your name?");
+            userName = Console.ReadLine();
+            userName = userName.ToString();
+		
+        }
 
+        else
+        {
+            Console.WriteLine($"Hello {nameText}");
 
+        }
 
 
 
