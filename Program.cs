@@ -8,10 +8,6 @@ public class Program
     public static string nameText = "default-John";
 	public static void Main()
 	{
-        // definitely file read all lines
-        // definitely file write all lines
-        //lets try this below and see if it sucks
-
     
         //File.ReadAllText(SonofAnder.txt, out nameText);      //maybe
   
